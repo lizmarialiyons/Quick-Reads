@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Book Cover Image with rounded corners -->
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/placeholder_image"
+        android:contentDescription="Book Cover"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_corners" />
+
+    <!-- Book Title with increased font and padding -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:padding="8dp" />
+
+    <!-- Book Authors in gray color and smaller font size -->
+    <TextView
+        android:id="@+id/authorsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Book Rating with orange color to indicate star rating -->
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF9800"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Divider line for separation between book details and summary -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Book Summary ScrollView with enhanced padding -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_background">
+
+        <TextView
+            android:id="@+id/summaryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="10"
+            android:padding="8dp"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>

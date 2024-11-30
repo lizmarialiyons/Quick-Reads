@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577988727487",
+    "project_id": "quickreads-7c80f",
+    "storage_bucket": "quickreads-7c80f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577988727487:android:c2afec05205045aff3ec0a",
+        "android_client_info": {
+          "package_name": "com.example.quickreads"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCidQslTXiO3vstjBMzcIMNHUTAHfrJcgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
